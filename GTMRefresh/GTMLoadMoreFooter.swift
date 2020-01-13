@@ -23,9 +23,9 @@ import UIKit
 open class GTMLoadMoreFooter: GTMRefreshComponent, SubGTMRefreshComponentProtocol {
     
     /// 加载更多Block
-    var loadMoreBlock: () -> Void = {}
+    open var loadMoreBlock: () -> Void = {}
     
-    var contentView: UIView = {
+    open var contentView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.clear
         return view
